@@ -41,9 +41,9 @@
   "projectName": "Touch Mobile",
   "packageName": "com.touch.mobile.dark",
   "versionHash": "v2",
-  "rss": "https://launcher-api-dj41.onrender.com/api/launcher/news",
-  "cdnCache": "https://launcher-api-dj41.onrender.com/mobile/cache",
-  "cdnLauncher": "https://launcher-api-dj41.onrender.com/mobile/launcher",
+  "rss": "http://10.0.2.2:3000/api/launcher/news",
+  "cdnCache": "http://10.0.2.2:3000/mobile/cache",
+  "cdnLauncher": "http://10.0.2.2:3000/mobile/launcher",
   "filesContinue": ["settings.ini", "gta_sa.set", "svconfig.ini"],
   "launcher": {
     "appVersion": "0.0.16",
