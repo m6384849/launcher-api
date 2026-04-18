@@ -1,0 +1,39 @@
+[
+  [
+    {
+      "id": 1,
+      "title": "VIP",
+      "image": "vip.png",
+      "category_id": 1,
+      "price": 10,
+      "price_scont": null,
+      "count": null,
+      "sort": 1,
+      "donate": 10,
+      "money": 0,
+      "random_car": 0,
+      "random_skin": 0,
+      "random_accessoaries": 0,
+      "accessoaries": 0,
+      "car": 0,
+      "skin": 0,
+      "trailer": null,
+      "licenses": "",
+      "weapon_skill": "",
+      "pay_day_x2": 0,
+      "job_x2": 0,
+      "mini_job_x2": 0,
+      "donate_x2": 0,
+      "tag": 0,
+      "published": 1
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "title": "Premium",
+      "sort": 1,
+      "published": 1
+    }
+  ]
+]
