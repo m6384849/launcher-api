@@ -1,0 +1,36 @@
+{
+  "cache": [],
+  "cacheMode": [],
+  "projectName": "Touch Mobile",
+  "packageName": "com.touch.mobile.dark",
+  "versionHash": "v1",
+  "rss": "https://launcher-api-dj41.onrender.com/api/launcher/news",
+  "cdnCache": "https://launcher-api-dj41.onrender.com/mobile/cache",
+  "cdnLauncher": "https://launcher-api-dj41.onrender.com/mobile/launcher",
+  "filesContinue": ["settings.ini", "gta_sa.set", "svconfig.ini"],
+  "launcher": {
+    "appVersion": "0.0.16",
+    "name": "app-release.apk",
+    "hash": "",
+    "bytes": 0,
+    "size": ""
+  },
+  "servers": [
+    {
+      "id": 1,
+      "show": true,
+      "version": "1.0",
+      "icon": "https://launcher-api-dj41.onrender.com/image/pro_icon.jpeg",
+      "events": [
+        { "title": "Acao x2", "style": "red" },
+        { "title": "Containers", "style": "blue" }
+      ],
+      "slot": 1000,
+      "bonus": true,
+      "name": "PRO - Server",
+      "description": "SA-MP Mobile",
+      "address": "176.32.39.214:7777",
+      "sampVersion": "0.3.7"
+    }
+  ]
+}
