@@ -1,9 +1,46 @@
 {
-  "cache": [],
-  "cacheMode": [],
+  "cache": [
+    {
+      "id": 1,
+      "name": "main.scm",
+      "path": "data",
+      "bytes": [524288],
+      "gpu": "A"
+    },
+    {
+      "id": 2,
+      "name": "gta3.img",
+      "path": "models",
+      "bytes": [104857600],
+      "gpu": "A"
+    },
+    {
+      "id": 3,
+      "name": "mobile.txd.dat",
+      "path": "texdb",
+      "bytes": [7340032, 9437184],
+      "gpu": "A"
+    },
+    {
+      "id": 4,
+      "name": "samp.saa",
+      "path": "audio",
+      "bytes": [20971520],
+      "gpu": "A"
+    }
+  ],
+  "cacheMode": [
+    {
+      "id": 3,
+      "name": "mobile.txd.dat",
+      "path": "texdb",
+      "bytes": [7340032, 9437184],
+      "gpu": "A"
+    }
+  ],
   "projectName": "Touch Mobile",
   "packageName": "com.touch.mobile.dark",
-  "versionHash": "v1",
+  "versionHash": "v2",
   "rss": "https://launcher-api-dj41.onrender.com/api/launcher/news",
   "cdnCache": "https://launcher-api-dj41.onrender.com/mobile/cache",
   "cdnLauncher": "https://launcher-api-dj41.onrender.com/mobile/launcher",
@@ -11,9 +48,9 @@
   "launcher": {
     "appVersion": "0.0.16",
     "name": "app-release.apk",
-    "hash": "",
-    "bytes": 0,
-    "size": ""
+    "hash": "COLOQUE_MD5_REAL_DO_APK",
+    "bytes": 12345678,
+    "size": "11.8 MB"
   },
   "servers": [
     {
