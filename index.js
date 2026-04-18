@@ -1,34 +1,33 @@
 const express = require('express');
+const fs = require('fs');
+const path = require('path');
+
 const app = express();
 
-app.get('/', (req, res) => {
+function readJson(fileName) {
+  const filePath = path.join(__dirname, fileName);
+  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+app.get('/', (_, res) => {
   res.send('API funcionando 👍');
 });
 
-app.get('/api/launcher/news', (req, res) => {
-  res.json([
-    {
-      id: 1,
-      title: "Launcher online",
-      description: "Tudo funcionando",
-      image: "https://via.placeholder.com/300",
-      date: "2026-04-14"
-    }
-  ]);
+app.get('/distribution.json', (_, res) => {
+  res.json(readJson('distribution.json'));
 });
 
-app.get('/api/launcher/donate', (req, res) => {
-  res.json([
-    { id: 1, title: "VIP", price: 10 }
-  ]);
+app.get('/api/launcher/news', (_, res) => {
+  res.json(readJson('news.json'));
 });
 
-app.get('/distribution.json', (req, res) => {
-  res.json({
-    version: "1.0.0",
-    required: true
-  });
+app.get('/api/launcher/donate', (_, res) => {
+  res.json(readJson('donate.json'));
 });
+
+app.use('/mobile', express.static(path.join(__dirname, 'mobile')));
+app.use('/image', express.static(path.join(__dirname, 'image')));
+app.use('/storage', express.static(path.join(__dirname, 'storage')));
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log("Rodando na porta " + PORT));
+app.listen(PORT, () => console.log(`Rodando na porta ${PORT}`));
